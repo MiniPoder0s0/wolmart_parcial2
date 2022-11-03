@@ -1,12 +1,11 @@
 @extends('master')
 
 @section('contenido')
-    <h1 class="text-center">Listado de alumnos</h1>
-    <a href="{{ url('/usuario/registrar') }}" class="btn btn-secondary">Registrar Cuenta</a><br><br>
+    <h1 class="text-center">Tu Cuenta</h1>
     <table class="table table-hover">
         <thead>
             <th>ID</th>
-            <th>No. Control</th>
+            <th>Nombre</th>
             <th>Nombre</th>
             <th>Edad</th>
             <th>Sexo</th>
@@ -16,7 +15,7 @@
             <th>Opciones</th>
         </thead>
         <tbody>
-            @foreach($alumnos as $a)
+            @foreach($usuario as $a)
                 <tr>
                     <td>{{$a->id}}</td>
                     <td>{{$a->n_control}}</td>
@@ -35,6 +34,6 @@
         </tbody>
     </table>
     <div class="text-center">
-        {{$alumnos->links()}}
+        {{$usuario->links()}}
     </div>
 @stop

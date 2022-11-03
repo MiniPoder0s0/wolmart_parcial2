@@ -2,12 +2,16 @@
 
 @section('contenido')
     <h1>Registrar Cuenta</h1><hr>
-    <form action="{{ url('/alumno/guardar') }}" method="POST">
+    <form action="{{ url('/usuario/guardar') }}" method="POST">
         @csrf
         <div class="form-group">
             <label for="">Nombre:</label>
             <input type="text" class="form-control" name="nombre" required>
         </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="correo_electronico">
+          </div>
         <div class="form-group">
             <label for="">Edad:</label>
             <input type="number" class="form-control" name="edad" required>
@@ -29,7 +33,7 @@
         </div>
         <div>
             <input type="submit" value="Registrar" class="btn btn-primary">
-            <a href="{{ url('/alumnos') }}" class="btn btn-danger">Cancelar</a>
+            <a href="{{url('/') }}" class="btn btn-danger">Cancelar</a>
         </div>
     </form>
 @stop
