@@ -4,18 +4,14 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Cuenta;
+use App\Models\Usuario;
 
-class CuentaSeeder extends Seeder
+class UsuarioSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+    
     public function run()
     {
-        Cuenta::create([ 
+        Usuario::create([ 
             'nombre'                =>'Sebastian',
             'correo_electronico'    =>'sebas@gmail.com',
             'edad'                  =>16,
@@ -27,3 +23,4 @@ class CuentaSeeder extends Seeder
         ]); 
     }
 }
+

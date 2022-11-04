@@ -14,6 +14,11 @@ class UsuarioController extends Controller
     function guardar(Request $datos){
         $usuario = Usuario::create($datos->post());
 
-        return redirect('/usuarios');
+        return redirect('/usuario/detalle/'.$usuario->id);
+    }
+    function detalle($id){
+        $usuario = Usuario::find($id);
+
+        return view('usuario.cuenta', compact('usuario'));
     }
 }

@@ -25,10 +25,10 @@
               <a class="nav-link" href="{{url('/productos')}}">Productos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{url('/cuenta')}}"><img src="{{asset('imagenes/logo_cuenta.png')}}" alt=""  width="30px"></a>
+              <a class="nav-link" href="{{url('/cuenta')}}"><img src="{{asset('imagenes/logo_cuenta.png')}}" alt=""  width="30px">   Mi cuenta</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{url('/carrito')}}"><img src="{{asset('imagenes/logo_carrito.png')}}" alt=""  width="30px"></a></a>
+              <a class="nav-link" href="{{url('/carrito')}}"><img src="{{asset('imagenes/logo_carrito.png')}}" alt=""  width="30px">  Mi carrito</a></a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
